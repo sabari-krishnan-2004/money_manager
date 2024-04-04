@@ -99,7 +99,7 @@ main {
 }
 
 /*--------------transactions section-----------------------------*/
-.transactions {
+/*.transactions {
   margin-top: 20px;
   width: 300px;
 }
@@ -111,7 +111,7 @@ main {
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 10px;
-  background-color: #000000; /* Light background color */
+  background-color: #000000; Light background color
   
   
   
@@ -134,7 +134,7 @@ main {
 
 .price {
   font-weight: bold;
-  color: red; /* green */
+  color: red; /* green 
 }
 
 .description {
@@ -145,4 +145,51 @@ main {
 .date-time {
   color: #777;
   font-size: 0.8em;
+}
+*/
+.transactions {
+  margin-top: 20px;
+  background-color: #000;
+  color: #fff; /* white font color */
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.transaction .left {
+  flex: 1;
+}
+
+.transaction .right {
+  flex: 1;
+  text-align: right;
+}
+
+.transaction .name {
+  font-weight: bold;
+}
+
+/*.transaction .price {
+  font-weight: bold;
+  color: #ff0000; /* red color for expense 
+}
+*/
+.transaction .price {
+  font-weight: bold;
+  color: #ff0000; /* Default to red color */
+}
+
+.transaction .price.green {
+  color: #4CAF50; /* Set color to green for positive values */
+}
+
+.transaction .date-time {
+  color: #777;
 }
